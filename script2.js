@@ -50,7 +50,7 @@ function playRecording() {
         channelData.set(data, offset);
         offset += data.length;
     });
-
+    recordedData = [];
     let audioBufferSourceNode = audioContext.createBufferSource();
     audioBufferSourceNode.buffer = audioBuffer;
     audioBufferSourceNode.connect(audioContext.destination);
